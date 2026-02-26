@@ -1,0 +1,275 @@
+.details-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.details-header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px 40px;
+  color: white;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.match-details-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.live-badge-large,
+.completed-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.live-badge-large {
+  background: #ff3333;
+  color: white;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.completed-badge {
+  background: #33cc33;
+  color: white;
+}
+
+.match-main-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.team-section {
+  text-align: center;
+  flex: 1;
+}
+
+.team-name-large {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.team-score-large {
+  font-size: 3rem;
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.winner-badge {
+  display: inline-block;
+  background: #33cc33;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.vs-section {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.vs-text {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.match-type,
+.match-result {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.match-time {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.match-details-info {
+  margin: 30px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.info-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.info-item h3 {
+  color: #667eea;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.info-item p {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.winner-info {
+  background: linear-gradient(135deg, #33cc33 0%, #22aa22 100%);
+  border-left-color: transparent;
+}
+
+.winner-info h3 {
+  color: white;
+}
+
+.winner-info p {
+  color: white;
+}
+
+.live-info {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #856404;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.not-found {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 40px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.not-found p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: #667eea;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .match-details-card {
+    padding: 25px;
+  }
+
+  .match-main-info {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .vs-section {
+    padding: 0;
+  }
+
+  .team-name-large {
+    font-size: 2rem;
+  }
+
+  .team-score-large {
+    font-size: 2.5rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
